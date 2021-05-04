@@ -10,7 +10,8 @@ import cucumber.api.junit.Cucumber;
 				 glue = {"stepdefinitions"},
 				 tags = {"@End2End"},
 				 plugin = {"pretty", "html:target/cucumber-reports"},
-				 monochrome = true)
+				 monochrome = true, 
+				 dryRun = false)
 public class TesteRunner {
 
 }

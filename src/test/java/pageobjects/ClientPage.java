@@ -50,11 +50,11 @@ public class ClientPage extends Utils {
 	
 	
 	public void validarItemRemovido(String produto) {
-		esperarElemento(btnCarrinho);
-		btnCarrinho.click();
-		WebElement linkProduto = driver.findElement(By.linkText(produto));
-		esperarElemento(linkProduto);
-		
-		assertTrue(!linkProduto.isDisplayed());
+//		esperarElemento(btnCarrinho);
+//		btnCarrinho.click();
+//		WebElement linkProduto = driver.findElement(By.linkText(produto));
+//		esperarElemento(linkProduto);
+		assertTrue(btnAdicionarNoCarrinho.isDisplayed());
+//		assertTrue(!linkProduto.isDisplayed());
 	}
 }
